@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.w {
+  width: 1100px;
+  margin: auto;
+}
+/* document.oncontextmenu = function(){
+
+    event.returnValue = false;
+
+}// 或者直接返回整个事件
+
+document.oncontextmenu = function(){
+
+    return false;
+
+} */
+/* 背景部分 */
+body {
+  background-size: cover;
+  /* background-image: url(./image/001.jpg); */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  animation-name: donghua;
+  animation-duration: 45s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+}
+@keyframes donghua {
+  0% {
+    background-image: url(image/19.jpg);
+  }
+  10% {
+    background-image: url(image/19.jpg);
+  }
+  20% {
+    background-image: url(image/20.jpg);
+  }
+  30% {
+    background-image: url(image/20.jpg);
+  }
+  40% {
+    background-image: url(image/21.jpg);
+  }
+  50% {
+    background-image: url(image/21.jpg);
+  }
+  60% {
+    background-image: url(image/22.jpg);
+  }
+  70% {
+    background-image: url(image/22.jpg);
+  }
+  80% {
+    background-image: url(image/23.jpg);
+  }
+  90% {
+    background-image: url(image/23.jpg);
+  }
+  100% {
+    background-image: url(image/19.jpg);
+  }
+}
+/* 顶端部分 */
+/* 顶端部分 */
+.top {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 60px;
+}
+.top .neibu {
+  width: 1080px;
+  height: 60px;
+}
+.top .neibu ul li {
+  float: left;
+  list-style: none;
+  line-height: 60px;
+}
+.top .neibu ul li h1 img {
+  height: 40px;
+  padding: 10px 10px 10px 0;
+}
+.top .neibu ul li > a {
+  display: block;
+  padding: 0 30px;
+  color: rgba(255, 255, 255);
+  text-decoration: none;
+}
+.top .neibu ul li > a img {
+  float: left;
+  height: 15px;
+  padding: 23px 5px 23px 0;
+}
+.top .neibu ul li > a:hover {
+  background-color: #d9534f;
+}
+.search {
+  /* search   v./n. 搜寻，搜查；探索，调查 */
+  float: right;
+  width: 235px;
+  height: 28px;
+  padding: 16px 3px 16px 18px;
+}
+.search input {
+  float: left;
+  width: 190px;
+  height: 26px;
+  border: 1px solid #d9534f;
+  padding-left: 8px;
+  outline: none;
+  border-radius: 2px;
+}
+input::placeholder {
+  color: #d9534f;
+}
+.search button {
+  float: right;
+  width: 28px;
+  height: 28px;
+  border: 1px solid #d9534f;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.search button img {
+  width: 100%;
+}
+/* 中间部分 */
+.neirong {
+  margin-top: 40px;
+  width: 1100px;
+  border-radius: 5px;
+  height: 1100px;
+}
+.neirong .images {
+  float: left;
+  width: 800px;
+}
+.neirong .images ul li {
+  position: relative;
+  float: left;
+  display: block;
+  list-style: none;
+  width: 330px;
+  height: 198px;
+  margin: 20px 25px;
+  background-color: rgba(252, 250, 245, 0.637);
+  box-shadow: 0px 0px 1px 1px #e6e6e6;
+}
+.neirong .images ul .first {
+  position: relative;
+  float: left;
+  display: block;
+  list-style: none;
+  width: 440px;
+  height: 330px;
+  margin: 20px 160px;
+  background-color: rgba(252, 250, 245, 0.637);
+  box-shadow: 0px 0px 1px 1px #e6e6e6;
+}
+.neirong .images ul li img {
+  display: block;
+  width: 100%;
+  background-size: cover;
+}
+.neirong .images ul li .zoomImage {
+  position: absolute;
+  /* 按比例剪切并使其居中 */
+  width: 80%;
+  height: 0;
+  padding-bottom: 48%;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  overflow: hidden;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  /* 以上 */
+  opacity: 0.9;
+  box-shadow: 0 0 20px 1px black;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+.neirong .images ul li .zoomImage:hover {
+  opacity: 1;
+  transform: scale(1.25);
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0);
+}
+.neirong .images ul .first .zoomImage {
+  position: absolute;
+  /* 按比例剪切并使其居中 */
+  width: 80%;
+  height: 0;
+  padding-bottom: 60%;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  overflow: hidden;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  /* 以上 */
+  opacity: 0.9;
+  box-shadow: 0 0 20px 1px black;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+.list {
+  float: right;
+  width: 300px;
+  margin: 20px 0 20px 0;
+  border-radius: 10px;
+  background-color: rgba(243, 243, 233, 0.651);
+  box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, 0.767);
+}
+.list .tou {
+  height: 30px;
+  line-height: 28px;
+  padding: 0 20px;
+  border-radius: 10px;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.767);
+}
+.list .tou a {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.911);
+}
+.list .tou img {
+  padding-right: 5px;
+  height: 12px;
+}
+.list ul li {
+  display: block;
+  list-style: none;
+}
+.list ul li a {
+  color: rgba(8, 8, 8, 0.877);
+  text-decoration: none;
+}
+.list ul li a em {
+  float: right;
+  color: rgba(202, 38, 38, 0.507);
+  margin-right: 10px;
+}
+.list ul .zhong {
+  line-height: 30px;
+  padding: 4px 15px;
+  transition: all 2s;
+}
+.list ul .zhong:hover {
+  border-bottom: 0px dashed #d8231d4b;
+  transition: all 1s;
+  box-shadow: 0px 0px 40px 3px #141414;
+  background-color: rgba(255, 255, 255, 0.856);
+}
+.biankuang {
+  border-bottom: 1px dashed #d8231d4b;
+}
